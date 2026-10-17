@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Lapcoas | Прайс-лист</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <div class="container">
+        <!-- Верхняя панель -->
+        <header>
+            <div class="header-top">
+                <span class="logo">@Lapcoas | Прайс-лист</span>
+                <div class="header-right">
+                    <span class="lang-switch">RU EN</span>
+                    <button id="theme-toggle" class="theme-btn">Светлая тема</button>
+                </div>
+            </div>
+            <h1 class="main-title"># @Lapcoas ★</h1>
+        </header>
+
+        <!-- Три плашки скругленных пузыря сверху -->
+        <section class="features">
+            <div class="feature-card">
+                <span class="feat-bold">100%</span>
+                <span class="feat-text">Гарантия</span>
+            </div>
+            <div class="feature-card">
+                <span class="feat-bold">24/7</span>
+                <span class="feat-text">Поддержка</span>
+            </div>
+            <div class="feature-card">
+                <span class="feat-bold">free</span>
+                <span class="feat-text">Тест Деф</span>
+            </div>
+        </section>
+
+        <!-- Главный пузырь: VIP Деф -->
+        <section class="service-card vip-card">
+            <div class="service-header">
+                <h3>VIP Деф</h3>
+                <span class="price-tag">24$ / 2200₽ / 1200 🌟</span>
+            </div>
+            <p class="badge-text">Навсегда</p>
+            <p class="service-desc">"Vip deff - дефаю вас от любых угроз, также обучаю осинту и прочему также помогаю вашим друзьям со скидкой 50%"</p>
+        </section>
+
+        <!-- Список остальных услуг в виде пузырей-карточек -->
+        <section class="services-list">
+            
+            <!-- Деф -->
+            <div class="service-card">
+                <h3>Деф</h3>
+                <div class="sub-prices">
+                    <p>Разово 250 руб</p>
+                    <p>Месяц 350 руб</p>
+                    <p>3 месяца 500 руб</p>
+                    <p>Год 1200 руб</p>
+                    <p>Навсегда 2500 руб</p>
+                </div>
+                <p class="service-desc">"защищу вас от любой угрозы, гарантия 100% "</p>
+            </div>
+
+            <!-- Осинт -->
+            <div class="service-card">
+                <div class="service-header">
+                    <h3>Осинт</h3>
+                    <span class="price-tag">150 – 800 руб</span>
+                </div>
+                <p class="service-desc">" помогу найти о человеку абсолютно все данные которые вас интересуют адрес, родителей, и прочее"</p>
+            </div>
+
+            <!-- Обучение -->
+            <div class="service-card">
+                <div class="service-header">
+                    <h3>Обучение</h3>
+                    <span class="price-tag">1000 руб</span>
+                </div>
+            </div>
+
+            <!-- Снос -->
+            <div class="service-card">
+                <h3>Снос</h3>
+                <p class="sub-info">ТГ аккаунта / канала / чата</p>
+                <div class="service-header" style="margin-top: 5px;">
+                    <span class="price-tag">Стоимость 200 – 900 руб</span>
+                </div>
+                <p class="service-desc">"зависит от аккаунта, не сношу анонимные номера и те у которых больше 5 нфт юзернеймов"</p>
+            </div>
+
+            <!-- Строчные плашки для мелких услуг (тоже скругленные) -->
+            <div class="flat-services-group">
+                <div class="flat-row-card">
+                    <span>П0дж0г дв€ри</span>
+                    <span class="flat-price">3000 – 12000 руб</span>
+                </div>
+                <div class="flat-row-card">
+                    <span>Сп0rтNкN</span>
+                    <span class="flat-price">2000 – 15000 руб</span>
+                </div>
+                <div class="flat-row-card">
+                    <span>ПрNв@т</span>
+                    <span class="flat-price">500 руб</span>
+                </div>
+                <div class="flat-row-card">
+                    <span>Д0н0с</span>
+                    <span class="flat-price">200 руб</span>
+                </div>
+                <div class="flat-row-card">
+                    <span>Cв¥т</span>
+                    <span class="flat-price">550 руб</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция оплаты и финальные пузыри-кнопки -->
+        <section class="checkout-section">
+            <p class="payment-methods">Оплату принимаю:<br>На карту / СБП / NFT / Звезды</p>
+            <div class="action-buttons">
+                <a href="https://t.me/Lapcoas" target="_blank" class="main-btn clickable-bubble">Купить / Связь в ЛС @Lapcoas</a>
+                <button id="open-reviews" class="secondary-btn clickable-bubble">Посмотреть отзывы</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Всплывающий пузырь с отзывами -->
+    <div id="reviews-modal" class="modal-overlay">
+        <div class="modal-bubble">
+            <span id="close-reviews" class="close-modal-btn">✕</span>
+            <h2>Отзывы клиентов</h2>
+            <div class="reviews-wrapper">
+                <div class="review-bubble-item">
+                    <p>«Просто лучший, очень сильно помог! Быстрый отклик и деф на высоте.»</p>
+                    <span class="author-tag">— Довольный клиент</span>
+                </div>
+                <div class="review-bubble-item">
+                    <p>«Осинт выполнен максимально детально, нашёл всё до мелочей о которых я не знал!»</p>
+                    <span class="author-tag">— Покупатель</span>
+                </div>
+                <div class="review-bubble-item">
+                    <p>«Купил обучение, всё четко разложил по полочкам от А до Я. Советую!»</p>
+                    <span class="author-tag">— Ученик</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
